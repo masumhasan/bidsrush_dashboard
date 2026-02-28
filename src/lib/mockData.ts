@@ -1,0 +1,213 @@
+import { Auction, Bid, User } from '@/types';
+
+export const currentUser: User = {
+  name: 'John Doe',
+  email: 'john@bidsrush.com',
+  avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=John',
+};
+
+export const mockAuctions: Auction[] = [
+  {
+    id: '1',
+    itemName: 'Vintage Rolex Submariner',
+    currentBid: 4500,
+    timeRemaining: '2h 35m',
+    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400&h=300&fit=crop',
+    bids: 12,
+  },
+  {
+    id: '2',
+    itemName: 'Antique Mahogany Desk',
+    currentBid: 850,
+    timeRemaining: '5h 10m',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop',
+    bids: 8,
+  },
+  {
+    id: '3',
+    itemName: 'Limited Edition Comic Book',
+    currentBid: 2200,
+    timeRemaining: '1h 45m',
+    image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=300&fit=crop',
+    bids: 23,
+  },
+  {
+    id: '4',
+    itemName: 'Signed Baseball Memorabilia',
+    currentBid: 1250,
+    timeRemaining: '3h 20m',
+    image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=300&fit=crop',
+    bids: 15,
+  },
+  {
+    id: '5',
+    itemName: 'Vintage Camera Collection',
+    currentBid: 1800,
+    timeRemaining: '4h 50m',
+    image: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=300&fit=crop',
+    bids: 18,
+  },
+  {
+    id: '6',
+    itemName: 'Gold & Diamond Necklace',
+    currentBid: 3200,
+    timeRemaining: '6h 15m',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=300&fit=crop',
+    bids: 31,
+  },
+  {
+    id: '7',
+    itemName: 'First Edition Harry Potter',
+    currentBid: 1650,
+    timeRemaining: '2h 00m',
+    image: 'https://images.unsplash.com/photo-1507842217343-583f20270319?w=400&h=300&fit=crop',
+    bids: 14,
+  },
+  {
+    id: '8',
+    itemName: 'Vintage Vinyl Record Set',
+    currentBid: 650,
+    timeRemaining: '7h 30m',
+    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=300&fit=crop',
+    bids: 9,
+  },
+  {
+    id: '9',
+    itemName: 'Rare Painting by Local Artist',
+    currentBid: 5000,
+    timeRemaining: '8h 45m',
+    image: 'https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=400&h=300&fit=crop',
+    bids: 7,
+  },
+  {
+    id: '10',
+    itemName: 'Antique Chinese Porcelain',
+    currentBid: 2800,
+    timeRemaining: '1h 10m',
+    image: 'https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=400&h=300&fit=crop',
+    bids: 19,
+  },
+  {
+    id: '11',
+    itemName: 'Designer Handbag',
+    currentBid: 1400,
+    timeRemaining: '3h 55m',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=300&fit=crop',
+    bids: 22,
+  },
+  {
+    id: '12',
+    itemName: 'Gaming Console Bundle',
+    currentBid: 450,
+    timeRemaining: '45m',
+    image: 'https://images.unsplash.com/photo-1605559424843-9e4c3ca4628d?w=400&h=300&fit=crop',
+    bids: 34,
+  },
+];
+
+export const mockBids: Bid[] = [
+  {
+    id: '1',
+    item: 'Vintage Rolex Submariner',
+    amount: 4500,
+    status: 'Active',
+    time: '2h 35m',
+    placedAt: '2024-02-27 10:30 AM',
+  },
+  {
+    id: '2',
+    item: 'Rare Painting by Local Artist',
+    amount: 5000,
+    status: 'Won',
+    time: 'Ended',
+    placedAt: '2024-02-26 03:15 PM',
+  },
+  {
+    id: '3',
+    item: 'Gold & Diamond Necklace',
+    amount: 3100,
+    status: 'Lost',
+    time: 'Ended',
+    placedAt: '2024-02-25 08:45 AM',
+  },
+  {
+    id: '4',
+    item: 'Antique Chinese Porcelain',
+    amount: 2800,
+    status: 'Active',
+    time: '1h 10m',
+    placedAt: '2024-02-27 02:20 PM',
+  },
+  {
+    id: '5',
+    item: 'Limited Edition Comic Book',
+    amount: 2150,
+    status: 'Active',
+    time: '1h 45m',
+    placedAt: '2024-02-27 11:00 AM',
+  },
+  {
+    id: '6',
+    item: 'First Edition Harry Potter',
+    amount: 1500,
+    status: 'Lost',
+    time: 'Ended',
+    placedAt: '2024-02-24 06:30 PM',
+  },
+  {
+    id: '7',
+    item: 'Signed Baseball Memorabilia',
+    amount: 1250,
+    status: 'Active',
+    time: '3h 20m',
+    placedAt: '2024-02-27 09:45 AM',
+  },
+  {
+    id: '8',
+    item: 'Antique Mahogany Desk',
+    amount: 800,
+    status: 'Lost',
+    time: 'Ended',
+    placedAt: '2024-02-23 01:15 PM',
+  },
+];
+
+export const recentBidsData = [
+  {
+    item: 'Vintage Rolex Submariner',
+    bidAmount: '$4,500',
+    status: 'Active' as const,
+    time: '2h 35m ago',
+  },
+  {
+    item: 'Rare Painting by Local Artist',
+    bidAmount: '$5,000',
+    status: 'Won' as const,
+    time: '18h ago',
+  },
+  {
+    item: 'Gold & Diamond Necklace',
+    bidAmount: '$3,100',
+    status: 'Lost' as const,
+    time: '1d ago',
+  },
+  {
+    item: 'Antique Chinese Porcelain',
+    bidAmount: '$2,800',
+    status: 'Active' as const,
+    time: '1h 10m ago',
+  },
+  {
+    item: 'Limited Edition Comic Book',
+    bidAmount: '$2,150',
+    status: 'Active' as const,
+    time: '6h ago',
+  },
+];
+
+export const dashboardStats = {
+  totalBids: 248,
+  activeAuctions: 12,
+  wonAuctions: 34,
+  totalSpent: 12480,
+};
