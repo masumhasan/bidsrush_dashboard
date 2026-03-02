@@ -10,6 +10,7 @@ import PlatformOperations from './pages/PlatformOperations';
 import BusinessManagement from './pages/BusinessManagement';
 import ShippingManagement from './pages/ShippingManagement';
 import CategoryManagement from './pages/CategoryManagement';
+import StoreManagement from './pages/StoreManagement';
 import Settings from './pages/Settings';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="operations" element={<PlatformOperations />} />
             <Route path="business" element={<BusinessManagement />} />
             <Route path="shipping" element={<ShippingManagement />} />
+            <Route path="stores" element={<StoreManagement />} />
             <Route path="settings" element={<Settings />} />
           </Route>
 
